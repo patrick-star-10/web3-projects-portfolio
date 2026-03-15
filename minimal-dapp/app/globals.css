@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-0: #f3f6ef;
+  --bg-1: #e6efff;
+  --bg-2: #ffe9d3;
+  --text-main: #1f2937;
+  --text-soft: #475569;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--text-main);
+  font-family: "Avenir Next", "Nunito Sans", "Segoe UI Variable", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(1000px 420px at -10% -10%, var(--bg-2), transparent 55%),
+    radial-gradient(900px 380px at 110% 0%, var(--bg-1), transparent 55%),
+    var(--bg-0);
+}
+
+@layer components {
+  .ui-shell {
+    @apply mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-10;
+  }
+
+  .ui-card {
+    @apply rounded-2xl border border-white/60 bg-white/80 p-5 shadow-[0_10px_30px_-16px_rgba(15,23,42,0.4)] backdrop-blur;
+  }
+
+  .ui-title {
+    @apply text-lg font-semibold text-slate-900;
+  }
+
+  .ui-subtle {
+    @apply text-sm text-slate-600;
+  }
+
+  .ui-btn {
+    @apply rounded-lg border border-slate-300/90 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .ui-btn-primary {
+    @apply rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .ui-input {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-emerald-300 transition focus:ring;
+  }
+}
