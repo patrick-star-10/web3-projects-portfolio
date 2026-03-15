@@ -1,15 +1,15 @@
-# Web3 Projects Portfolio
+# Web3 项目作品集
 
-This repository bundles several learning projects built while practicing the Web3 stack.
+这个仓库整理了我在学习 Web3 技术栈过程中完成的几个练习项目，主要覆盖智能合约开发、单元测试，以及前后端链上交互。
 
-## Included Projects
+## 项目列表
 
-- `minimal-dapp`: Next.js + wagmi + viem + RainbowKit demo with wallet connection, contract reads/writes, and event listening.
-- `MiniToken`: ERC20-style token implementation and Foundry tests.
-- `MiniNFTPro`: ERC721-style NFT implementation and Foundry tests.
-- `mini-vault`: Minimal ETH vault contract with deposit, withdraw, and pause controls.
+- `minimal-dapp`：基于 Next.js、wagmi、viem 和 RainbowKit 的最小化 DApp，包含钱包连接、合约读写和事件监听。
+- `MiniToken`：基于 Solidity 实现的 ERC20 风格代币合约，并使用 Foundry 编写测试。
+- `MiniNFTPro`：基于 Solidity 实现的 ERC721 风格 NFT 合约，并使用 Foundry 编写测试。
+- `mini-vault`：一个简单的 ETH 金库合约，支持存款、取款和暂停控制。
 
-## Notes
+## 说明
 
-- Generated files such as `node_modules`, `.next`, Foundry `out/`, and `cache/` are intentionally excluded.
-- Original per-project Git history was left untouched in the source workspace; this repo is a clean export for GitHub.
+- 仓库中已排除 `node_modules`、`.next`、Foundry `out/`、`cache/` 等生成文件。
+- 原始工作区中各子项目的独立 Git 历史没有被改动，这个仓库是用于 GitHub 展示的整合版本。
